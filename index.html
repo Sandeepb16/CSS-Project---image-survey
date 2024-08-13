@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- rodot font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- quatation font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Foldit:wght@295&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        /* giving margin and padding as 0px inorder to fit viewport*/
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .section3,.section4,.section5{
+            border: 2px solid red;
+            width: 98.7vw;
+            height: 100vh;
+        }
+
+        .section1{
+            background-image: url(pexels-d-ng-nhan-324384-1529881.jpg);
+            background-size: cover;
+            padding: 1%;
+        
+            height: 100vh;
+        }
+        .header{
+            height: 12%;
+            width: 98%;
+            padding: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+         /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.038);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12.6px);
+            -webkit-backdrop-filter: blur(12.6px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        /* logo styles  */
+        .logo{
+            height: 100%;
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h1{
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-style: normal;
+            padding: 14px 10px;
+            color: rgba(245, 245, 245, 0.555);
+        }
+        .menu{
+            width: 23%;
+            height: 100%;
+        }
+        .menu ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+        }
+        .menu ul li{
+            list-style-type: none;
+            font-size: larger;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            padding:4%;
+            color: rgba(245, 245, 245, 0.555);
+
+        }
+        /* hover changes */
+        .menu ul li:hover,.logo h1:hover{
+            background-color: rgba(0, 0, 0, 0.449);
+            color: azure;
+            border-radius: 10%;
+        }
+        
+        /* quatation style */
+        .quatation{
+            width: 35%;
+            height: 50%;
+            padding: 2%;
+            margin-top: 10%;
+            border-radius: 10%;
+        }
+        .quatation h1{
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 1.9rem;
+        
+        }
+
+        /* section2 starts here  */
+
+        .section2{
+            padding:7% 10%;
+            background-color: rgba(0, 0, 0, 0.458)
+        }
+        
+        #aboutus{
+            height: 100%;
+            width: 100%;
+            padding: 3%;
+            background-image: url(forest.avif);
+            background-size: cover;
+            /* From https://css.glass */
+            background: rgba(0, 0, 0, 0.566);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.166);
+        }
+        .aboutcontent{
+            display: flex;
+            column-gap: 2%;
+            align-items: center;
+            justify-content: center;
+        }
+        #aboutus h1{
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.712);
+            padding: 2%;
+            text-align: center;
+            margin-bottom: 5%;
+            background: rgba(0, 0, 0, 0.566);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.166);
+        
+            /* background-color: rgba(61, 62, 62, 0.611); */
+        }
+        .Ahead{
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.712);
+        }
+        #aboutus p{
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.712);
+            line-height: 1.8em;
+            text-align: justify;
+            padding: 3%;
+            border-radius: 16px;
+        }
+        #aboutus p:hover{
+            
+            background-color: rgba(0, 0, 0, 0.449);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- section 1 starts from here -->
+    <section class="section1">
+
+        <header class="header">
+            <div class="logo">
+                <!-- company logo  -->
+                <!-- <img src="company_logo.jpg" alt=""> -->
+                <!-- main heading or company name -->
+                <h1><span style="padding: 10px 14px; background-color: rgb(19, 19, 19) ; color: white; border-radius: 50%;">C</span>  Image Survey</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>About Us</li>
+                    <li>Items</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- quatation related to survey -->
+         <div class="quatation">
+            <h1>&ldquo;<i> A man's feet should <br>BE PLANTED IN HIS COUNTRY,</i></h1><br>
+            <h1><i>but his eyes should <br>SURVEY THE WORLD... &ldquor;</i></h1><br><br>
+            <h1><i>--By George Santayana</i></h1>
+         </div>
+
+    </section>
+
+
+    <!-- section 2 starts from here -->
+    <section class="section2">
+
+        <div id="aboutus">
+
+            <h1>About Us</h1>
+            <div class="aboutcontent">
+
+                <p>
+                    <span class="Ahead">Company History:</span><br>
+                    Founded in 2010, VisionMap Solutions began as a small startup with a big idea 
+                    to revolutionize the way businesses and organizations leverage visual data.
+                    We began by offering basic drone surveys for local food's,
+                     providing travelers with vital information about turist places in a country and natural forest visuals.
+                </p><br><br>
+    
+                <p>
+                    <span class="Ahead">Our Mission:</span><br>
+                    At VisionMap Solutions, our mission is to empower organizations with the tools and insights they need to make informed, data-driven decisions. 
+                    We are committed to delivering high-quality, 
+                    precise visual data analysis that transforms the way our clients understand and interact with their environments.
+                </p>
+
+            </div>
+
+            <!-- <p>
+                <span class="Ahead">Our Vision:</span><br>
+                We envision a world where visual data is the cornerstone of decision-making across industries. Our goal is to lead the global transformation towards more sustainable,
+                efficient, and intelligent solutions by continuously advancing the capabilities of image survey technology.
+            </p> -->
+
+        </div>
+        
+      
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- section 3 starts from here -->
+    <section class="section3">
+        places
+    </section>
+
+
+    <!-- section 4 starts from here -->
+    <section class="section4">
+        Contact Us
+    </section>
+
+
+    <!-- section 5 starts from here -->
+    <section class="section5">
+        footer
+    </section>
+</body>
+</html>
