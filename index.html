@@ -24,9 +24,9 @@
         .section3,.section4,.section5{
             border: 2px solid red;
             width: 98.7vw;
-            height: 100vh;
+            height: 120vh;
         }
-
+        /* section1 style  */
         .section1{
             background-image: url(pexels-d-ng-nhan-324384-1529881.jpg);
             background-size: cover;
@@ -50,7 +50,7 @@
             -webkit-backdrop-filter: blur(12.6px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
-        /* logo styles  */
+        /* navbar styles  */
         .logo{
             height: 100%;
             width: 15%;
@@ -58,6 +58,7 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .logo h1{
             font-family: "Roboto", sans-serif;
             font-weight: 600;
@@ -66,10 +67,12 @@
             padding: 14px 10px;
             color: rgba(245, 245, 245, 0.555);
         }
+
         .menu{
             width: 23%;
             height: 100%;
         }
+
         .menu ul{
             display: flex;
             justify-content: space-around;
@@ -78,6 +81,7 @@
             width: 100%;
 
         }
+
         .menu ul li{
             list-style-type: none;
             font-size: larger;
@@ -88,6 +92,13 @@
             color: rgba(245, 245, 245, 0.555);
 
         }
+
+        .menu ul li a{
+            text-decoration: none;
+            color: rgba(245, 245, 245, 0.555);
+
+        }
+
         /* hover changes */
         .menu ul li:hover,.logo h1:hover{
             background-color: rgba(0, 0, 0, 0.449);
@@ -103,14 +114,13 @@
             margin-top: 10%;
             border-radius: 10%;
         }
+
         .quatation h1{
             font-family: "Roboto", serif,sans-serif;
-            font-size: 1.9rem;
-        
+            font-size: 1.9rem; 
         }
 
         /* section2 starts here  */
-
         .section2{
             padding:7% 10%;
             background-color: rgba(0, 0, 0, 0.458)
@@ -128,12 +138,14 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.166);
         }
+
         .aboutcontent{
             display: flex;
             column-gap: 2%;
             align-items: center;
             justify-content: center;
         }
+
         #aboutus h1{
             font-family: "Roboto", serif,sans-serif;
             font-size: 2rem;
@@ -144,9 +156,8 @@
             background: rgba(0, 0, 0, 0.566);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.166);
-        
-            /* background-color: rgba(61, 62, 62, 0.611); */
+            border: 1px solid rgba(255, 255, 255, 0.166);      
+            
         }
         .Ahead{
             font-family: "Roboto", serif,sans-serif;
@@ -154,6 +165,8 @@
             font-weight: 500;
             color: rgba(255, 255, 255, 0.712);
         }
+
+        /* section2 content starts here */
         #aboutus p{
             font-family: "Roboto", serif,sans-serif;
             font-size: 1.1rem;
@@ -163,14 +176,67 @@
             text-align: justify;
             padding: 3%;
             border-radius: 16px;
+            /* background-color: rgba(0, 0, 0, 0.449); */
         }
-        #aboutus p:hover{
-            
+
+        #aboutus p:hover{            
             background-color: rgba(0, 0, 0, 0.449);
 
         }
 
+        
+        .section3{
+            background-color: black;
+        }
 
+        .section3 .container_3{
+            display: grid;
+            height: 100%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'a1 a1 a2'
+                                 'a3 a3 a2'
+                                 'a4 a4 a2';
+        }
+        .info1{
+            grid-area: a1;
+            border: 2px solid white;
+            text-align: center;
+        }
+        .picinfo2{
+            grid-area: a2;
+            border: 2px solid white;
+
+        }
+        .info3{
+            grid-area: a3;
+            border: 2px solid white;
+        }
+        .info4{
+            grid-area: a4;
+            border: 2px solid wheat;
+        }
+
+        .picinfo2{
+            height: 100%;
+            border-radius: 10%;
+            padding: 1%;
+        }
+        .picinfo2 img{
+            border-radius: 10%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container_3 .info1 h2{
+            color: orange;
+            border: 2px solid white;
+        }
+        .container_3 .info1 p{
+            color: orangered;
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
@@ -179,24 +245,21 @@
 
         <header class="header">
             <div class="logo">
-                <!-- company logo  -->
-                <!-- <img src="company_logo.jpg" alt=""> -->
-                <!-- main heading or company name -->
-                <h1><span style="padding: 10px 14px; background-color: rgb(19, 19, 19) ; color: white; border-radius: 50%;">C</span>  Image Survey</h1>
+                <h1><span style="padding: 10px 14px; background-color: rgb(19, 19, 19) ; color: white; border-radius: 50%;">C</span> VisionMap</h1>
             </div>
             <div class="menu">
                 <ul>
-                    <li>About Us</li>
-                    <li>Items</li>
-                    <li>Contact us</li>
+                    <li><a href="#sect1">About Us</a></li>
+                    <li><a href="">Items</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
             </div>
         </header>
 
         <!-- quatation related to survey -->
          <div class="quatation">
-            <h1>&ldquo;<i> A man's feet should <br>BE PLANTED IN HIS COUNTRY,</i></h1><br>
-            <h1><i>but his eyes should <br>SURVEY THE WORLD... &ldquor;</i></h1><br><br>
+            <h1>&ldquo;<i> A man's feet should <br>be planted in his country,</i></h1><br>
+            <h1><i>but his eyes should <br>survey the world... &ldquor;</i></h1><br><br>
             <h1><i>--By George Santayana</i></h1>
          </div>
 
@@ -204,13 +267,13 @@
 
 
     <!-- section 2 starts from here -->
-    <section class="section2">
+    <section class="section2" id="sect1">
 
         <div id="aboutus">
-
+            <!-- main heading  -->
             <h1>About Us</h1>
             <div class="aboutcontent">
-
+                <!-- History of the company  -->
                 <p>
                     <span class="Ahead">Company History:</span><br>
                     Founded in 2010, VisionMap Solutions began as a small startup with a big idea 
@@ -218,7 +281,7 @@
                     We began by offering basic drone surveys for local food's,
                      providing travelers with vital information about turist places in a country and natural forest visuals.
                 </p><br><br>
-    
+                <!-- company's missions -->
                 <p>
                     <span class="Ahead">Our Mission:</span><br>
                     At VisionMap Solutions, our mission is to empower organizations with the tools and insights they need to make informed, data-driven decisions. 
@@ -228,29 +291,31 @@
 
             </div>
 
-            <!-- <p>
-                <span class="Ahead">Our Vision:</span><br>
-                We envision a world where visual data is the cornerstone of decision-making across industries. Our goal is to lead the global transformation towards more sustainable,
-                efficient, and intelligent solutions by continuously advancing the capabilities of image survey technology.
-            </p> -->
-
-        </div>
-        
-      
-
-
-
-
-
-
-
-
+        </div>        
     </section>
 
 
     <!-- section 3 starts from here -->
     <section class="section3">
-        places
+
+        <div class="container_3">
+            <div class="info1">
+                <h2>The Amazon Rainforest</h2>
+                <p>The Amazon Rainforest spans across Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana. It is home to the Amazon River, the second-longest river in the world, which flows over 4,000 miles (6,400 km).</p>
+            </div>
+            <div class="picinfo2">
+                <img src="premium_photo-1661854901998-bcc2d0212780.avif" alt="">
+            </div>
+            <div class="info3">
+
+            </div>
+            <div class="info4">
+
+            </div>
+
+
+        </div>
+
     </section>
 
 
