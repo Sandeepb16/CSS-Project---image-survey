@@ -20,11 +20,10 @@
             margin: 0px;
             padding: 0px;
         }
-
-        .section3,.section4,.section5{
-            border: 2px solid red;
+        .section5,.section2,.section1,.section3,.section4{
+            /* border: 1px solid red; */
             width: 98.7vw;
-            height: 120vh;
+            /* height: 100vh; */
         }
         /* section1 style  */
         .section1{
@@ -36,14 +35,15 @@
         }
         .header{
             height: 12%;
-            width: 98%;
+            width: 80%;
             padding: 1%;
+            margin-left: 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: fixed;
          /* From https://css.glass */
-            background: rgba(255, 255, 255, 0.038);
+            background: rgba(0, 0, 0, 0.577);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(12.6px);
@@ -53,7 +53,7 @@
         /* navbar styles  */
         .logo{
             height: 100%;
-            width: 15%;
+            width: 25%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -65,6 +65,7 @@
             font-style: normal;
             font-style: normal;
             padding: 14px 10px;
+            width: 100%;
             color: rgba(245, 245, 245, 0.555);
         }
 
@@ -123,7 +124,9 @@
         /* section2 starts here  */
         .section2{
             padding:7% 10%;
-            background-color: rgba(0, 0, 0, 0.458)
+            background-color: rgba(0, 0, 0, 0.458);
+            height: 120vh;
+            
         }
         
         #aboutus{
@@ -186,41 +189,60 @@
 
         
         .section3{
-            background-color: black;
+            background: rgba(0, 0, 0, 0.708);
+            height: 100vh;
         }
 
         .section3 .container_3{
             display: grid;
             height: 100%;
+            gap: 20px 10px;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: 'a1 a1 a2'
-                                 'a3 a3 a2'
+                                 
                                  'a4 a4 a2';
         }
         .info1{
             grid-area: a1;
-            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.384);
             text-align: center;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-top: 2%;
+            padding: 1% ;
+            
         }
         .picinfo2{
             grid-area: a2;
-            border: 2px solid white;
-
+            margin-right: 1.5%;
         }
-        .info3{
-            grid-area: a3;
-            border: 2px solid white;
-        }
-        .info4{
-            grid-area: a4;
+        /* .info3{
+            grid-area: a3;       
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             border: 2px solid wheat;
+            height: 33%;
+            border-radius: 25px;
+            
+        } */
+
+        .info4{
+            grid-area: a4;    
+            text-align: center;   
+            background-color: rgba(0, 0, 0, 0.384);
+            border-radius: 25px;
+            margin-left: 10px;
+            padding: 3% 1% ;
+            margin-bottom: 2%;
         }
 
         .picinfo2{
             height: 100%;
-            border-radius: 10%;
-            padding: 1%;
+            
+            padding: 5% 1%;
+            /* background-color: rgba(240, 255, 255, 0.779); */
         }
         .picinfo2 img{
             border-radius: 10%;
@@ -229,14 +251,144 @@
         }
 
         .container_3 .info1 h2{
-            color: orange;
-            border: 2px solid white;
+            color: rgba(255, 255, 255, 0.712);
+           background-color: black;
+            /* width: 30%; */
+            height: 20%;
+            padding: 1%;
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2%;
+            border-radius: 25px;
+            
         }
-        .container_3 .info1 p{
-            color: orangered;
+        .container_3 .info1 p,.container_3 .info4 p{
+            color: rgba(255, 255, 255, 0.814);
             font-family: "Roboto", serif,sans-serif;
             font-size: 1.2rem;
+            margin-bottom: 2%;
+            width: 100%;
+           
         }
+
+        .container_3 .info3 img{
+            height: 64%;
+            width: 20%;
+            border-radius: 50%;
+            border: 2px solid rgba(245, 245, 245, 0.884);
+            box-shadow: 1px 1px 4px 10px rgb(23, 23, 23);  
+        }
+        .section4{
+            background-color: rgba(0, 0, 0, 0.415);
+            width:98.7vw;
+            padding: 0% 5%;
+
+        }
+        .section4 .mform{
+            display: flex;
+            gap: 4%;
+            /* border: 2px solid; */
+            height: 50vh;
+            padding: 3%;
+    
+        }
+        .mform .q1{
+            width: 20%;
+            height: 70%;
+        }
+        .sec4div .topic{
+            font-size: 2rem;
+            font-family: "Roboto", serif,sans-serif;
+            padding: 3%;
+            background-color: rgba(0, 0, 0, 0.608);
+            font-weight: 800;
+            color: rgba(245, 245, 245, 0.814);
+            border-top: 10px solid rgba(0, 0, 0, 0.66);
+            border-bottom: 5px solid rgba(0, 0, 0, 0.66);
+            text-align: center;
+        }
+        .sec4div .question{
+            padding: 1% 3%;
+            font-size: 1.5rem;
+            font-family: "Roboto", serif,sans-serif;
+            color: rgb(0, 0, 0);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.708);
+        }
+        /* style="font-weight: 500; font-size: large;" */
+        .mform .q1 label{
+            font-weight: 500;
+            font-size: large;
+            font-family: "Roboto", serif,sans-serif;
+            padding: 1% 2%;
+            /* background-color: aqua;  */
+        }
+        .mform .q1 label img{
+            margin-top: 2%;
+            box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.57);
+        }
+        .sec4div .question .span11{
+            color: rgba(255, 255, 255, 0.825);
+            font-size: larger;
+            font-family: "Roboto", serif,sans-serif;
+
+            font-weight: 600;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.771);
+        }
+        .section5 .foothead{
+            font-family: "Roboto", serif,sans-serif;
+            font-size: 2rem;
+            padding: 5%;
+            background-color: rgba(0, 0, 0, 0.749);
+            font-weight: 700;
+            color: rgba(245, 245, 245, 0.814);
+        }
+        .section5 .maindetails{
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.484);
+            padding: 5% 0%;
+        }   
+        .section5 .maindetails .details,.form_s,.textarea{
+            width: 25%;
+            height: 30vh;
+            /* border: 2px solid blue; */
+            background-color: rgba(0, 0, 0, 0.715);
+        }
+        .section5 .maindetails .details .name_m,.email_m,.gender_m,.occ_m{
+            width: 100%;
+            height: 50%;
+            /* border: 2px solid green; */
+            padding: 8% 2%;
+        }
+        .section5 .maindetails .details .name_m input,.email_m input{
+            width: 100%;
+            height: 70%;
+        }
+
+        .form_s .gender_m{
+            padding: 10% 30%;
+        }
+        .form_s .occ_m select{
+            height: 70%;
+            width: 100%;
+        }
+        .textarea{
+            padding: 1% 5% 2% 4%;
+        }
+        .textarea label,.occ_m label,.form_s label,.details label{
+            color: rgba(245, 245, 245, 0.814);
+
+        }
+        .footer{
+            text-align: center;
+            font-size: medium;
+            font-weight: 500;
+            border-top: 5px solid black;
+            padding: 1%;
+        }
+
+
     </style>
 </head>
 <body>
@@ -245,13 +397,13 @@
 
         <header class="header">
             <div class="logo">
-                <h1><span style="padding: 10px 14px; background-color: rgb(19, 19, 19) ; color: white; border-radius: 50%;">C</span> VisionMap</h1>
+                <h1>VisionMap</h1>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#sect1">About Us</a></li>
-                    <li><a href="">Items</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <li><a href="#sec4">Items</a></li>
+                    <!-- <li><a href="">Contact us</a></li> -->
                 </ul>
             </div>
         </header>
@@ -296,38 +448,181 @@
 
 
     <!-- section 3 starts from here -->
-    <section class="section3">
+    <!-- <section class="section3">
 
         <div class="container_3">
             <div class="info1">
                 <h2>The Amazon Rainforest</h2>
-                <p>The Amazon Rainforest spans across Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana. It is home to the Amazon River, the second-longest river in the world, which flows over 4,000 miles (6,400 km).</p>
+                <p>The Amazon Forest, often referred to as the Amazon Rainforest, is the largest tropical rainforest in the world. It's located in South America and spans several countries, including Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana.</p><br><br>
+                <p>The Amazon is home to an estimated 390 billion individual trees and around 16,000 species of trees. It also hosts a diverse array of wildlife, including more than 2,000 species of fish, 1,300 species of birds, 430 species of mammals, and countless insects.</p>
             </div>
             <div class="picinfo2">
-                <img src="premium_photo-1661854901998-bcc2d0212780.avif" alt="">
+                <img src="for.jpeg" alt="">
             </div>
-            <div class="info3">
-
-            </div>
+            
             <div class="info4">
-
+                <p>The Amazon is home to an estimated 390 billion individual trees and around 16,000 species of trees. <br> It also hosts a diverse array of wildlife, including more than 2,000 species of fish, 1,300 species of birds,<br> 430 species of mammals, and countless insects. <br><br>
+                    Some notable species include jaguars, sloths, capybaras, and anaconda snakes, as well as an enormous <br> variety of insects and birds. The forest is home to many indigenous tribes who rely on it for their way of life. <br> These communities often possess deep ecological knowledge and sustainable practices. <br><br> 
+                    The Amazon plays a critical role in absorbing carbon dioxide, a greenhouse gas, which helps mitigate global warming. It also influences global weather patterns and regional climates.
+                </p>
             </div>
 
 
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- section 4 starts from here -->
+<form action="" method="get" class="formq1">
+    <section class="section4" id="sec4">
+
+        <div class="sec4div">
+
+            <div class="topic">Biodiversity Representation </div>
+            <p class="question"><span class="span11">Question.1</span><br> <br>Which image best represents the biodiversity of the Amazon Rainforest?</p>
+            
+            <!-- <form action="" method="get" class="formq1"> -->
+                <div class="mform">
+                    <div class="q1"> 
+                        <input type="radio" id="q1op1" name="quotion1" value="option1">
+                        <label for="q1op1" >diverse species of plants. <br><img src="q1-op1.jpeg" alt="option_1" height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q1op2" name="quotion1" value="option2">
+                        <label for="q1op2">wildlife on the banks.<br><img src="q1-op2.jpeg" alt=" " height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q1op3" name="quotion1" value="option3">
+                        <label for="q1op3">Amazonian flower <br><img src="q1-op3.jpeg" alt="" height="90%" width="100%" >
+                        </label>
+                    </div> 
+                    <div class="q1"> 
+                        <input type="radio" id="q1op4" name="quotion1" value="option4">
+                        <label for="q1op4">fog forest <br><img src="fogforest.jpeg" alt="" height="90%" width="100%">
+                        </label>
+                    </div> 
+                </div>
+            <!-- </form> -->
+            
+        </div>
+                
+            
+    </section>
+
+
     <section class="section4">
-        Contact Us
-    </section>
+        <div class="sec4div">
 
-
-    <!-- section 5 starts from here -->
-    <section class="section5">
-        footer
+            <div class="topic">Environmental Impact </div>
+            <p class="question"><span class="span11">Question.2</span><br> <br>Which image best depicts the impact of deforestation in the Amazon?</p>
+            
+            <!-- <form action="" method="get" class="formq1"> -->
+                <div class="mform">
+                    <div class="q1"> 
+                        <input type="radio" id="q2op1" name="quotion2" value="option1">
+                        <label for="q2op1" >species of plant <br><img src="q2-op1.jpeg" alt="option_1" height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q2op2" name="quotion2" value="option2">
+                        <label for="q2op2">burned forest<br><img src="q2-op2.jpeg" alt=" " height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q2op3" name="quotion2" value="option3">
+                        <label for="q2op3">logging operation <br><img src="q2-op3.jpeg" alt="" height="90%" width="100%" >
+                        </label>
+                    </div> 
+                    <div class="q1"> 
+                        <input type="radio" id="q2op4" name="quotion2" value="option4">
+                        <label for="q2op4">cleared patch<br><img src="q2-op4.jpeg" alt="" height="90%" width="100%">
+                        </label>
+                    </div> 
+                </div>
+            <!-- </form> -->
+            
+        </div>
     </section>
+    <section class="section4">
+        <div class="sec4div">
+
+            <div class="topic">Tourism Potential</div>
+            <p class="question"><span class="span11">Question.3</span><br> <br>Which image would make you most interested in visiting the Amazon Rainforest?</p>
+            
+            <!-- <form action="" method="get" class="formq1"> -->
+                <div class="mform">
+                    <div class="q1"> 
+                        <input type="radio" id="q3op1" name="quotion3" value="option1">
+                        <label for="q3op1" >diverse species of plants. <br><img src="q3-op1.jpeg" alt="option_1" height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q3op2" name="quotion3" value="option2">
+                        <label for="q3op2">wildlife on the banks.<br><img src="q3-op2.jpeg" alt=" " height="90%" width="100%">
+                        </label>
+                    </div>
+                    <div class="q1"> 
+                        <input type="radio" id="q3op3" name="quotion3" value="option3">
+                        <label for="q3op3">Amazonian flower <br><img src="q3-op3.jpeg" alt="" height="90%" width="100%" >
+                        </label>
+                    </div> 
+                    <div class="q1"> 
+                        <input type="radio" id="q4op4" name="quotion3" value="option4">
+                        <label for="q3op4">fog forest <br><img src="q3-op4.jpeg" alt="" height="90%" width="100%">
+                        </label>
+                    </div> 
+                </div>
+            <!-- </form> -->
+            
+        </div>
+    </section>
+    
+<section class="section5">
+    <div class="foothead">Please tell a little bit about yourse</div>
+    <div class="maindetails">
+
+            <div class="details">
+                <div class="name_m">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" name="Name" placeholder="Enter Your name"><br>
+                </div>
+                <div class="email_m">
+                    <label for="email">Your Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                </div>
+            </div>
+            <div class="form_s">
+                <div class="gender_m">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">female</label>
+                </div>
+                <div class="occ_m">
+                    <label for="occupation">Your occupation</label><br>
+                    <select name="occupation" id="occupation">
+                        <option value="bisiness">bussiness</option>
+                        <option value="bisiness">IT - job</option>
+                        <option value="bisiness">Former</option>
+                        <option value="bisiness">Teacher</option>
+                        <option value="bisiness">Police officer</option>
+                        <option value="bisiness">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="textarea">
+                <label for="tectarea">Additional Opinions </label><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+    </div>
+
+        
+</section>
+    <div style="background-color: rgba(0, 0, 0, 0.484); padding-left: 50%; padding-bottom: 3%;"><input type="submit" value="submit" style="height: 6vh; width: 5vw; font-size: 1rem; color: rgba(255, 255, 255, 0.863); background-color: rgba(0, 0, 0, 0.786); border-radius: 10px;" ></div>
+</form>
+<div class="footer"><p>Copyright &copy; 2024 Your Survey Name - Html Forms By Visionmap</p></div>
 </body>
 </html>
