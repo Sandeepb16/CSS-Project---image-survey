@@ -21,9 +21,7 @@
             padding: 0px;
         }
         .section5,.section2,.section1,.section3,.section4{
-            /* border: 1px solid red; */
             width: 98.7vw;
-            /* height: 100vh; */
         }
         /* section1 style  */
         .section1{
@@ -39,7 +37,7 @@
             padding: 1%;
             margin-left: 10%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             position: fixed;
          /* From https://css.glass */
@@ -53,7 +51,7 @@
         /* navbar styles  */
         .logo{
             height: 100%;
-            width: 25%;
+            width: 15%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -70,7 +68,7 @@
         }
 
         .menu{
-            width: 23%;
+            width: 25%;
             height: 100%;
         }
 
@@ -85,11 +83,12 @@
 
         .menu ul li{
             list-style-type: none;
-            font-size: larger;
+            font-size: x-large;
             font-family: "Roboto", sans-serif;
             font-weight: 600;
             font-style: normal;
             padding:4%;
+            width: 50%;
             color: rgba(245, 245, 245, 0.555);
 
         }
@@ -103,7 +102,7 @@
         /* hover changes */
         .menu ul li:hover,.logo h1:hover{
             background-color: rgba(0, 0, 0, 0.449);
-            color: azure;
+            color: rgba(240, 255, 255, 0.579);
             border-radius: 10%;
         }
         
@@ -188,12 +187,12 @@
         }
 
         
-        .section3{
+        /* .section3{
             background: rgba(0, 0, 0, 0.708);
             height: 100vh;
-        }
+        } */
 
-        .section3 .container_3{
+        /* .section3 .container_3{
             display: grid;
             height: 100%;
             gap: 20px 10px;
@@ -202,8 +201,8 @@
             grid-template-areas: 'a1 a1 a2'
                                  
                                  'a4 a4 a2';
-        }
-        .info1{
+        } */
+        /* .info1{
             grid-area: a1;
             background-color: rgba(0, 0, 0, 0.384);
             text-align: center;
@@ -212,23 +211,14 @@
             margin-top: 2%;
             padding: 1% ;
             
-        }
-        .picinfo2{
+        } */
+        /* .picinfo2{
             grid-area: a2;
             margin-right: 1.5%;
-        }
-        /* .info3{
-            grid-area: a3;       
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 2px solid wheat;
-            height: 33%;
-            border-radius: 25px;
-            
         } */
+        
 
-        .info4{
+        /* .info4{
             grid-area: a4;    
             text-align: center;   
             background-color: rgba(0, 0, 0, 0.384);
@@ -236,24 +226,23 @@
             margin-left: 10px;
             padding: 3% 1% ;
             margin-bottom: 2%;
-        }
+        } */
 
-        .picinfo2{
+        /* .picinfo2{
             height: 100%;
             
             padding: 5% 1%;
-            /* background-color: rgba(240, 255, 255, 0.779); */
         }
         .picinfo2 img{
             border-radius: 10%;
             height: 100%;
             width: 100%;
-        }
+        } */
 
-        .container_3 .info1 h2{
+        /* .container_3 .info1 h2{
             color: rgba(255, 255, 255, 0.712);
            background-color: black;
-            /* width: 30%; */
+            width: 30%;
             height: 20%;
             padding: 1%;
             font-family: "Roboto", serif,sans-serif;
@@ -261,23 +250,23 @@
             margin-bottom: 2%;
             border-radius: 25px;
             
-        }
-        .container_3 .info1 p,.container_3 .info4 p{
+        } */
+        /* .container_3 .info1 p,.container_3 .info4 p{
             color: rgba(255, 255, 255, 0.814);
             font-family: "Roboto", serif,sans-serif;
             font-size: 1.2rem;
             margin-bottom: 2%;
             width: 100%;
            
-        }
+        } */
 
-        .container_3 .info3 img{
+        /* .container_3 .info3 img{
             height: 64%;
             width: 20%;
             border-radius: 50%;
             border: 2px solid rgba(245, 245, 245, 0.884);
             box-shadow: 1px 1px 4px 10px rgb(23, 23, 23);  
-        }
+        } */
         .section4{
             background-color: rgba(0, 0, 0, 0.415);
             width:98.7vw;
@@ -389,6 +378,32 @@
         }
 
 
+
+
+
+        /* media qur */
+        @media screen and (width<976px){
+            .header{
+            height: 12%;
+            width: 80%;
+            padding: 1%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+         /* From https://css.glass */
+            background: rgba(0, 0, 0, 0.577);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12.6px);
+            -webkit-backdrop-filter: blur(12.6px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            }
+            .header .menu{
+          display: none;
+        }
+    }
     </style>
 </head>
 <body>
@@ -405,6 +420,9 @@
                     <li><a href="#sec4">Items</a></li>
                     <!-- <li><a href="">Contact us</a></li> -->
                 </ul>
+            </div>
+            <div class="none">
+                
             </div>
         </header>
 
